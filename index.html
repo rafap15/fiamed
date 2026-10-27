@@ -215,6 +215,12 @@ footer{border-top:1px solid #222427;color:var(--suave-osc);font-size:14px}
 footer .wrap{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-block:32px calc(32px + env(safe-area-inset-bottom,0px))}
 footer img{height:34px;width:auto}
 
+.ig-link{color:#fff;text-decoration:none;border-bottom:2px solid var(--naranja)}
+.ig-link:hover{color:var(--naranja)}
+.pie-der{display:flex;align-items:center;gap:14px}
+.ig-btn{width:38px;height:38px;border-radius:10px;border:1px solid #2A2C2F;display:grid;place-items:center;color:#fff}
+.ig-btn:hover{background:var(--naranja);border-color:var(--naranja)}
+.ig-btn svg{width:20px;height:20px}
 .wa-flota{position:fixed;right:calc(20px + env(safe-area-inset-right,0px));bottom:calc(20px + env(safe-area-inset-bottom,0px));z-index:30;display:flex;align-items:center;gap:10px;text-decoration:none}
 .wa-flota .burbuja{background:#fff;color:var(--texto);font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;box-shadow:0 6px 20px rgba(0,0,0,.15)}
 .wa-flota .circ{width:58px;height:58px;border-radius:50%;background:#25D366;color:#fff;display:grid;place-items:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
@@ -232,6 +238,7 @@ footer img{height:34px;width:auto}
   <symbol id="i-lupa" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21V10l9-6 9 6v11"/><path d="M9 21v-6h6v6"/><circle cx="17.5" cy="16.5" r="3" fill="var(--naranja)"/><path d="m20 19 2 2"/></symbol>
   <symbol id="i-caja" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8v8l9 5 9-5z"/><path d="m3 8 9 5 9-5"/><path d="M12 13v8"/></symbol>
   <symbol id="i-linea" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 15 4-4 3 3 6-6"/><path d="M15 8h5v5"/></symbol>
+  <symbol id="ig" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></symbol>
 </svg>
 
 <header class="nav"><div class="wrap">
@@ -402,7 +409,7 @@ footer img{height:34px;width:auto}
         <div class="dato"><small>WhatsApp</small><span class="tel-num">[número]</span></div>
         <div class="dato"><small>Correo</small><span>contacto.fiamed@gmail.com</span></div>
         <div class="dato"><small>Oficina</small><span>Calle 8 esquina Aldama, C.P. 87050, Ciudad Victoria, Tamaulipas</span></div>
-        <div class="dato"><small>Cobertura</small><span>Todo México</span></div>
+        <div class="dato"><small>Instagram</small><span><a class="ig-link" href="https://www.instagram.com/fiamed.fianzas/" target="_blank" rel="noopener">@fiamed.fianzas</a></span></div>
       </div>
     </div>
     <form id="cotiza" novalidate>
@@ -424,7 +431,7 @@ footer img{height:34px;width:auto}
   <footer><div class="wrap">
     <img src="img/fiamed-logo-blanco.png" alt="FIAMED Fianzas">
     <span>Fianzas Medina · Agente de fianzas persona física</span>
-    <span>Ciudad Victoria, Tamaulipas · © 2026</span>
+    <span class="pie-der"><a class="ig-btn" href="https://www.instagram.com/fiamed.fianzas/" target="_blank" rel="noopener" aria-label="FIAMED en Instagram"><svg><use href="#ig"/></svg></a>Ciudad Victoria, Tamaulipas · © 2026</span>
   </div></footer>
 </section>
 </main>
